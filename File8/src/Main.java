@@ -23,8 +23,10 @@ public class Main {
 		try (FileReader fr = new FileReader("x.txt")){
 			fr.read(c1);
 //			String ss = new String(c1);
+//			String d = new String("My String");
+//			System.out.println(d);
 			for(int i = 0; i < c1.length; i++){
-				System.out.println(c1[i]);
+				System.out.print(c1[i]);
 			}
 			
 		} catch (IOException e) {

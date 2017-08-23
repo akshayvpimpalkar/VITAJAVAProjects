@@ -25,10 +25,11 @@ public class Main {
 					int n;
 					do{
 						n = sc.nextInt();
-						dos.writeInt(n);
+						
 						if(n == 0){
 							break;
 						}
+						dos.writeInt(n);
 						
 					}while(n != 0);
 					
@@ -46,7 +47,7 @@ public class Main {
 		try (FileInputStream fis = new FileInputStream("abc.txt")){
 			try (DataInputStream dis = new DataInputStream(fis)){
 				while(dis.available()>0){
-					System.out.println(dis.readInt());
+					System.out.print(dis.readInt()+" ");
 				}
 			} catch (Exception e) {
 				// TODO: handle exception

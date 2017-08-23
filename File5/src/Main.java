@@ -13,9 +13,9 @@ public class Main {
 			raf.write(b, 0, k);
 			raf.seek(0);
 			byte c[] = new byte[(int)raf.length()];
-			raf.read(c);
+			raf.read(c); //reading data
 			String ss = new String(c);
-			System.out.println(ss);
+			System.out.println(ss); // printing data
 			//raf.seek(raf.length());
 			System.out.println("\nenter data again");
 			k = System.in.read(b);

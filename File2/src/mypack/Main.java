@@ -10,10 +10,10 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Customer c = new Customer();
-		c.setCustName("Akshay");
-		c.setCustID("1234");
-		c.setAddress("Mulund");
-		c.setAge(26);
+		c.setCustName("Keshav");
+		c.setCustID("465");
+		c.setAddress("Pune");
+		c.setAge(23);
 		try (FileOutputStream fos = new FileOutputStream("xyz.txt")){
 			try (ObjectOutputStream oos = new ObjectOutputStream(fos)){
 				oos.writeObject(c);
